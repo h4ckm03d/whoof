@@ -127,7 +127,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "PushEvent",
 			event:    PushEvents,
 			typ:      PushEventPayload{},
-			filename: "../testdata/gitlab/push-event.json",
+			filename: "../../testdata/gitlab/push-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Push Hook"},
 			},
@@ -136,7 +136,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "TagEvent",
 			event:    TagEvents,
 			typ:      TagEventPayload{},
-			filename: "../testdata/gitlab/tag-event.json",
+			filename: "../../testdata/gitlab/tag-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Tag Push Hook"},
 			},
@@ -145,7 +145,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "IssueEvent",
 			event:    IssuesEvents,
 			typ:      IssueEventPayload{},
-			filename: "../testdata/gitlab/issue-event.json",
+			filename: "../../testdata/gitlab/issue-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Issue Hook"},
 			},
@@ -154,7 +154,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "ConfidentialIssueEvent",
 			event:    ConfidentialIssuesEvents,
 			typ:      ConfidentialIssueEventPayload{},
-			filename: "../testdata/gitlab/confidential-issue-event.json",
+			filename: "../../testdata/gitlab/confidential-issue-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Confidential Issue Hook"},
 			},
@@ -163,7 +163,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "CommentCommitEvent",
 			event:    CommentEvents,
 			typ:      CommentEventPayload{},
-			filename: "../testdata/gitlab/comment-commit-event.json",
+			filename: "../../testdata/gitlab/comment-commit-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Note Hook"},
 			},
@@ -172,7 +172,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "CommentMergeRequestEvent",
 			event:    CommentEvents,
 			typ:      CommentEventPayload{},
-			filename: "../testdata/gitlab/comment-merge-request-event.json",
+			filename: "../../testdata/gitlab/comment-merge-request-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Note Hook"},
 			},
@@ -181,7 +181,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "CommentIssueEvent",
 			event:    CommentEvents,
 			typ:      CommentEventPayload{},
-			filename: "../testdata/gitlab/comment-issue-event.json",
+			filename: "../../testdata/gitlab/comment-issue-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Note Hook"},
 			},
@@ -190,7 +190,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "CommentSnippetEvent",
 			event:    CommentEvents,
 			typ:      CommentEventPayload{},
-			filename: "../testdata/gitlab/comment-snippet-event.json",
+			filename: "../../testdata/gitlab/comment-snippet-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Note Hook"},
 			},
@@ -199,7 +199,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "MergeRequestEvent",
 			event:    MergeRequestEvents,
 			typ:      MergeRequestEventPayload{},
-			filename: "../testdata/gitlab/merge-request-event.json",
+			filename: "../../testdata/gitlab/merge-request-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Merge Request Hook"},
 			},
@@ -208,7 +208,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "WikipageEvent",
 			event:    WikiPageEvents,
 			typ:      WikiPageEventPayload{},
-			filename: "../testdata/gitlab/wikipage-event.json",
+			filename: "../../testdata/gitlab/wikipage-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Wiki Page Hook"},
 			},
@@ -217,7 +217,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "PipelineEvent",
 			event:    PipelineEvents,
 			typ:      PipelineEventPayload{},
-			filename: "../testdata/gitlab/pipeline-event.json",
+			filename: "../../testdata/gitlab/pipeline-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Pipeline Hook"},
 			},
@@ -226,7 +226,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "BuildEvent",
 			event:    BuildEvents,
 			typ:      BuildEventPayload{},
-			filename: "../testdata/gitlab/build-event.json",
+			filename: "../../testdata/gitlab/build-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Build Hook"},
 			},
@@ -235,7 +235,7 @@ func TestWebhooks(t *testing.T) {
 			name:     "JobEvent",
 			event:    JobEvents,
 			typ:      JobEventPayload{},
-			filename: "../testdata/gitlab/job-event.json",
+			filename: "../../testdata/gitlab/job-event.json",
 			headers: http.Header{
 				"X-Gitlab-Event": []string{"Job Hook"},
 			},
@@ -286,19 +286,19 @@ func TestSystemHooks(t *testing.T) {
 			name:     "PushEvent",
 			event:    PushEvents,
 			typ:      PushEventPayload{},
-			filename: "../testdata/gitlab/push-event.json",
+			filename: "../../testdata/gitlab/push-event.json",
 		},
 		{
 			name:     "TagEvent",
 			event:    TagEvents,
 			typ:      TagEventPayload{},
-			filename: "../testdata/gitlab/tag-event.json",
+			filename: "../../testdata/gitlab/tag-event.json",
 		},
 		{
 			name:     "MergeRequestEvent",
 			event:    MergeRequestEvents,
 			typ:      MergeRequestEventPayload{},
-			filename: "../testdata/gitlab/merge-request-event.json",
+			filename: "../../testdata/gitlab/merge-request-event.json",
 		},
 	}
 	for _, tt := range tests {
