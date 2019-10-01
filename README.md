@@ -6,4 +6,7 @@ Facebook webhook made easy
 [![Build Status](https://travis-ci.org/h4ckm03d/whoof.svg?branch=master)](https://travis-ci.org/h4ckm03d/whoof)
 [![Go Report Card](https://goreportcard.com/badge/github.com/h4ckm03d/whoof)](https://goreportcard.com/report/github.com/h4ckm03d/whoof)
 [![codecov](https://codecov.io/gh/h4ckm03d/whoof/branch/master/graph/badge.svg)](https://codecov.io/gh/h4ckm03d/whoof)
-[![Whoof](https://github.com/h4ckm03d/whoof/workflows/Whoof/badge.svg)](https://github.com/h4ckm03d/whoof)
+
+<p align="left">
+  <a href="https://github.com/h4ckm03d/whoof"><img alt="GitHub Actions status" src="https://github.com/h4ckm03d/whoof/workflows/Whoof/badge.svg"></a>
+</p>
